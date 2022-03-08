@@ -8,12 +8,12 @@ const str5 = 'racecarQQ'
 
 describe('isPalendrome function', () => {
 
-	xit('returns a boolean for if a string is a palendrome (spelled same forward backwards)', () => {
+	it('returns a boolean for if a string is a palendrome (spelled same forward backwards)', () => {
 		expect(isPalendrome(str1)).toBe(true);
 		expect(isPalendrome(str2)).toBe(false);
 	});
 
-	xit('is case sensitive', () => {
+	it('is case sensitive', () => {
 		expect(isPalendrome(str3)).toBe(false);
 	});
 });
