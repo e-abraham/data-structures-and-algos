@@ -1,9 +1,9 @@
 function isPalendrome(str){
-	// Complete the function!
+	/* // Complete the function!
 	let revStr = str.split('').reverse().join('');
 	console.log(`string: ${str} \n reverse: ${revStr}`);
 	return str === revStr;
-	
+	*/
 
 	/* // Alternative solution
 	let first, last;
@@ -17,7 +17,6 @@ function isPalendrome(str){
 	*/
 
 	// Recursive solution
-	
 	if (str.length <= 1) return true; // O(1)
 	else {
 		let first = str[0]; // O(1)
