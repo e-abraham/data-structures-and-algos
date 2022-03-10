@@ -15,6 +15,17 @@ function isPalendrome(str){
 	}
 	return true;
 	*/
+
+	// Recursive solution
+	
+	if (str.length <= 1) return true; // O(1)
+	else {
+		let first = str[0]; // O(1)
+		let last = str[str.length - 1]; // O(1)
+		if (first != last) return false; // O(1)
+		return isPalendrome(str.slice(1, str.length - 1)); // O(n/2)
+	}
+	// O(n) solution
 }
 
 
