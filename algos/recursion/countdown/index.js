@@ -10,4 +10,13 @@ function countdown(n){
 
 }
 
+// function countdown(n){
+// 	let str = '';
+// 	for(let i = n; i > 0; i--){
+// 		str += `${i}, `
+// 	}
+// 	str += 'Liftoff!'
+// 	return str
+// }
+
 module.exports = countdown
