@@ -17,8 +17,8 @@ function isPalendrome(str){
 	*/
 
 	// Recursive solution
-	if (str.length <= 1) return true; // O(1)
-	else {
+	if (str.length <= 1) return true; // Base Case, O(1)
+	else { // Recursive Case
 		let first = str[0]; // O(1)
 		let last = str[str.length - 1]; // O(1)
 		if (first != last) return false; // O(1)

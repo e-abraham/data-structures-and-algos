@@ -1,10 +1,10 @@
 function countdown(n){
-    // String counts down from n, replace 0 with Liftoff!
+    // String counts down from n, replace 0 with Liftoff! neg n goes straight to Liftoff!
     // Join each string to the next separated by comma space
-    // neg n goes straight to Liftoff!
-    if (n <= 0) {
+    // Recursive solution
+    if (n <= 0) { // Base Case
         return "Liftoff!"; // O(1)
-    } else {
+    } else { // Recursive Case
         return `${n}, ` + countdown(n-1); // O(n)
     } // O(n) solution
 
