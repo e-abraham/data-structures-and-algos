@@ -30,6 +30,9 @@ function isPalendrome(str){
 
 function isPermutationPalendrome(str){
 	// Complete the function!
+	// if word length even, then each letter must even count
+	// if word length odd, then 1 letter must be odd count all rest even
+	
 
 }
 
