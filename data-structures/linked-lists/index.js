@@ -16,10 +16,10 @@ class LinkedList {
   }
 
   addToTail(newNode){
-    if (!this.tail){
+    if (!this.tail){ // Edge Case no nodes
       this.head = newNode;
       this.tail = newNode;
-    } else {
+    } else { // General Case has nodes
       this.tail.next = newNode;
       newNode.previous = this.tail;
       this.tail = newNode;
@@ -35,10 +35,10 @@ class LinkedList {
   }
 
   addToHead(newNode){
-    if (!this.head){
+    if (!this.head){ // Edge Case no nodes
       this.head = newNode;
       this.tail = newNode;
-    } else {
+    } else { // General Case has nodes
       this.head.previous = newNode;
       newNode.next = this.head;
       this.head = newNode;
@@ -54,12 +54,15 @@ class LinkedList {
   }
 
   removeTail(){
-    if (!this.tail) return null;
+    if (!this.tail) return null; // Edge Case no nodes
     let oldTail = this.tail;
-    if (this.head === this.tail){
+    if (this.head === this.tail){ // Edge Case 1 node
+    /*  // Alternative check
+    if(!oldTail.previous){
+    */
       this.head = null;
       this.tail = null;
-    } else {
+    } else { // General Case has nodes
       this.tail = oldTail.previous;
       this.tail.next = null;
     }
